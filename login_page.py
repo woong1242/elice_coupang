@@ -17,7 +17,7 @@ class LoginPage:
         wait = ws(self.driver, 20)
 
         user_box = wait.until(EC.presence_of_element_located((By.ID, 'login-email-input')))
-        user_box.send_keys("user_emain")
+        user_box.send_keys("user_email")
 
         # 비밀번호 입력 필드 대기 후 입력
         password_box = wait.until(EC.presence_of_element_located((By.ID, 'login-password-input')))

@@ -5,10 +5,10 @@ from selenium.webdriver.support.ui import WebDriverWait as ws
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.webdriver import WebDriver # noqa
 from selenium.common.exceptions import NoSuchElementException , TimeoutException
-from tests.pages.main_page import MainPage
+from main_page import MainPage
 from selenium.webdriver.common.by import By
 from urllib import parse
-from tests.pages.login_page import LoginPage
+from login_page import LoginPage
 
 @pytest.mark.usefixtures("driver")
 class TestMainPage:
